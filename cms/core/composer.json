@@ -1,0 +1,41 @@
+{
+    "name": "code9vn/dino-cms",
+    "version": "0.0.01",
+    "description": "The Dino CMS based on Laravel Framework.",
+    "keywords": [
+        "code9vn",
+        "dino cms",
+        "dino platform"
+    ],
+    "homepage": "https://dino.code9.vn",
+    "support": {
+        "document": "https://dino.code9.vn/docs"
+    },
+    "authors": [
+        {
+            "name": "Code 9",
+            "email": "hi@code9.vn"
+        }
+    ],
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dino\\Base\\": "base/src",
+            "Dino\\Dashboard\\": "dashboard/src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dino\\Base\\Providers\\BaseServiceProvider",
+                "Dino\\Dashboard\\Providers\\DashboardServiceProvider"
+            ],
+            "aliases": {
+                "BaseHelper": "Dino\\Base\\Facades\\BaseHelperFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

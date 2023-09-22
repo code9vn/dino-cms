@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa322c53454393ed775cfe4807d54a50",
+    "content-hash": "c2b88cff2d6c29073e5afddf85e37711",
     "packages": [
         {
             "name": "brick/math",
@@ -60,6 +60,52 @@
                 }
             ],
             "time": "2023-01-15T23:15:59+00:00"
+        },
+        {
+            "name": "code9vn/dino-cms",
+            "version": "0.0.01",
+            "dist": {
+                "type": "path",
+                "url": "./cms/core",
+                "reference": "c883816b2c5425d5aea1dee7b326b4967a413f3a"
+            },
+            "type": "project",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Dino\\Base\\Providers\\BaseServiceProvider",
+                        "Dino\\Dashboard\\Providers\\DashboardServiceProvider"
+                    ],
+                    "aliases": {
+                        "BaseHelper": "Dino\\Base\\Facades\\BaseHelperFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dino\\Base\\": "base/src",
+                    "Dino\\Dashboard\\": "dashboard/src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Code 9",
+                    "email": "hi@code9.vn"
+                }
+            ],
+            "description": "The Dino CMS based on Laravel Framework.",
+            "homepage": "https://dino.code9.vn",
+            "keywords": [
+                "code9vn",
+                "dino cms",
+                "dino platform"
+            ],
+            "support": {
+                "document": "https://dino.code9.vn/docs"
+            },
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "dflydev/dot-access-data",
