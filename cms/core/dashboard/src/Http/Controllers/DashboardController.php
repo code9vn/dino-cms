@@ -8,6 +8,6 @@ class DashboardController extends BaseController
 {
     public function index()
     {
-        return 'Hello Dashboard';
+        return view('core/dashboard::index');
     }
 }

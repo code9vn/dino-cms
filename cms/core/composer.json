@@ -22,14 +22,18 @@
     "autoload": {
         "psr-4": {
             "Dino\\Base\\": "base/src",
-            "Dino\\Dashboard\\": "dashboard/src"
+            "Dino\\Media\\": "media/src",
+            "Dino\\Dashboard\\": "dashboard/src",
+            "Dino\\User\\": "user/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Dino\\Base\\Providers\\BaseServiceProvider",
-                "Dino\\Dashboard\\Providers\\DashboardServiceProvider"
+                "Dino\\Media\\Providers\\MediaServiceProvider",
+                "Dino\\Dashboard\\Providers\\DashboardServiceProvider",
+                "Dino\\User\\Providers\\UserServiceProvider"
             ],
             "aliases": {
                 "BaseHelper": "Dino\\Base\\Facades\\BaseHelperFacade"

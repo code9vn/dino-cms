@@ -1,0 +1,23 @@
+.navbar-brand>a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.navbar-footer {
+    padding: 5px;
+}
+
+.navbar-footer span,
+.navbar-footer span>a {
+    font-size: 13px;
+    color: #888;
+}
+
+.navbar-footer strong {
+    font-weight: 600;
+}
+
+/* File-management */
+.fm-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    /* display: none; */
+}
