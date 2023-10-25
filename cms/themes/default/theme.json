@@ -1,0 +1,9 @@
+{
+    "id": "dino/default",
+    "name": "Default",
+    "namespace": "Theme\\Default\\",
+    "description": "Default theme for Dino CMS",
+    "author": "Code 9",
+    "url": "https://code9.vn",
+    "required_plugins": []
+}

@@ -1,0 +1,10 @@
+{
+    "id": "dino/post",
+    "name": "Bài viết",
+    "namespace": "Dino\\Post\\",
+    "provider": "Dino\\Post\\Providers\\PostServiceProvider",
+    "author": "Code 9",
+    "url": "https://code9.vn",
+    "version": "0.0.01",
+    "description": "Quản lý bài viết, chuyên mục, tags,..."
+}

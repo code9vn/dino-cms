@@ -13,6 +13,15 @@
         </div>
 
         <ul class="nav flex-row justify-content-end order-1 order-lg-2">
+
+            @if (Route::has('index'))
+            <li class="nav-item nav-item-dropdown-lg">
+                <a href="{{ route('index') }}" class="navbar-nav-link navbar-nav-link-icon rounded-pill">
+                    <i class="ph-globe"></i>
+                </a>
+            </li>
+            @endif
+
             <li class="nav-item ms-lg-2">
                 <a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="offcanvas"
                     data-bs-target="#notifications">
@@ -29,7 +38,7 @@
                             alt="">
                         <span class="status-indicator bg-success"></span>
                     </div>
-                    <span class="d-none d-lg-inline-block mx-lg-2">Victoria</span>
+                    <span class="d-none d-lg-inline-block mx-lg-2">{{ auth()->user()->name }}</span>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-end">
@@ -55,9 +64,9 @@
                         <i class="ph-gear me-2"></i>
                         Account settings
                     </a>
-                    <a href="#" class="dropdown-item">
+                    <a href="{{ route('logout') }}" class="dropdown-item text-danger">
                         <i class="ph-sign-out me-2"></i>
-                        Logout
+                        Đăng xuất
                     </a>
                 </div>
             </li>

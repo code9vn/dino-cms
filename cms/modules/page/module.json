@@ -1,0 +1,10 @@
+{
+    "id": "dino/page",
+    "name": "Trang tĩnh",
+    "namespace": "Dino\\Page\\",
+    "provider": "Dino\\Page\\Providers\\PageServiceProvider",
+    "author": "Code 9",
+    "url": "https://code9.vn",
+    "version": "0.0.01",
+    "description": "Quản lý trang tĩnh: giới thiệu,..."
+}

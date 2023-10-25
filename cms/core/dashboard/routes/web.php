@@ -4,7 +4,7 @@ use Dino\Base\Helpers\BaseHelper;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['namespace' => 'Dino\Dashboard\Http\Controllers', 'middleware' => 'web'], function () {
-    Route::group(['prefix' => BaseHelper::getAdminPrefix()], function () { // ! add 'middleware' => 'auth'
+    Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () { // ! add 'middleware' => 'auth'
 
         Route::get('/', [
             'as' => 'dashboard.index',

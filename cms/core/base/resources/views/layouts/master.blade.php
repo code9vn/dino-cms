@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@yield('page_title', 'Trang chủ') | {{ config('core.base.common.app_name') }}</title>
+    <title>@yield('page_title', 'Trang chủ') | {{ setting('site_name', config('core.base.common.app_name')) }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @include('core/base::layouts.partials.styles')
     @stack('styles')
@@ -18,6 +18,15 @@
         @include('core/base::layouts.partials.sidebar')
         <div class="content-wrapper">
             <div class="content-inner">
+
+                <div class="page-header page-header-light shadow">
+                    <div class="page-header-content d-lg-flex">
+                        <div class="d-flex">
+                            {{ Breadcrumbs::render() }}
+                        </div>
+                    </div>
+                </div>
+
                 <div class="content">
                     @yield('content')
                 </div>
@@ -28,7 +37,7 @@
     </div>
 
     @include('core/base::layouts.partials.notifications')
-
+    @include('core/base::layouts.partials.scripts')
     @stack('scripts')
 </body>
 

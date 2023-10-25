@@ -21,3 +21,101 @@
 .fm-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
     /* display: none; */
 }
+
+.dataTables_length>label {
+    text-wrap: nowrap;
+    gap: 5px;
+}
+
+.nav-sidebar .nav-item:not(.nav-item-header):first-child {
+    padding-top: 0;
+}
+
+.dt-buttons button i.fas {
+    font-size: 12px;
+}
+
+.col-form-label {
+    font-weight: 600;
+}
+
+.dataTables_filter,
+.dt-buttons,
+.datatable-footer>* {
+    margin-bottom: 0;
+}
+
+.datatable-footer,
+.datatable-header {
+    padding: 10px;
+}
+
+.datatable-footer {
+    background-color: #fafafa;
+}
+
+table.dataTable {
+    border-top: 3px solid #ebeef0;
+    border-bottom: 3px solid #ebeef0;
+}
+
+.dataTable thead th {
+    background-color: #fbfcfd;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    color: #888;
+    border-bottom-color: #d2d5da;
+}
+
+.dataTable thead .sorting:after,
+.dataTable thead .sorting:before,
+.dataTable thead .sorting_asc_disabled:before,
+.dataTable thead .sorting_desc_disabled:after {
+    color: #222;
+}
+
+.table>:not(caption)>*>* {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.nav-sidebar .nav-item-open>.nav-link:not(.disabled):not(:active),
+.nav-sidebar>.nav-item-expanded>.nav-link:not(:active) {
+    background-color: #049aad;
+}
+
+ul.datatable_actions {
+    padding: 0;
+    gap: 10px;
+    justify-content: center;
+}
+
+ul.datatable_actions li {
+    list-style: none;
+}
+
+ul.datatable_actions li i {
+    font-size: 14px;
+}
+
+.list-permissions .accordion-item .accordion-header>button {
+    padding: 8px 15px;
+    background: #f3f4f6;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-check-label {
+    cursor: pointer;
+}
+
+sup.required {
+    color: red;
+}
+
+.sidebar-main {
+    border-right: none;
+    left: unset;
+}

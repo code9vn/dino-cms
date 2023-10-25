@@ -29499,13 +29499,13 @@ html[data-color-theme=dark] .fancytree-checkbox {
     }
 }
 
-.fancytree-title>input {
+/* .fancytree-title>input {
     border: 0;
     outline: 0;
     padding: 0;
     background-color: transparent;
     color: var(--body-color)
-}
+} */
 
 .fancytree-active .fancytree-title,
 .fancytree-selected .fancytree-title {

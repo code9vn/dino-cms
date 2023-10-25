@@ -22,21 +22,31 @@
     "autoload": {
         "psr-4": {
             "Dino\\Base\\": "base/src",
+            "Dino\\Setting\\": "setting/src",
             "Dino\\Media\\": "media/src",
             "Dino\\Dashboard\\": "dashboard/src",
-            "Dino\\User\\": "user/src"
+            "Dino\\User\\": "user/src",
+            "Dino\\Module\\": "module/src",
+            "Dino\\Theme\\": "theme/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Dino\\Base\\Providers\\BaseServiceProvider",
+                "Dino\\Setting\\Providers\\SettingServiceProvider",
                 "Dino\\Media\\Providers\\MediaServiceProvider",
                 "Dino\\Dashboard\\Providers\\DashboardServiceProvider",
-                "Dino\\User\\Providers\\UserServiceProvider"
+                "Dino\\User\\Providers\\UserServiceProvider",
+                "Dino\\Module\\Providers\\ModuleServiceProvider",
+                "Dino\\Theme\\Providers\\ThemeServiceProvider"
             ],
             "aliases": {
-                "BaseHelper": "Dino\\Base\\Facades\\BaseHelperFacade"
+                "BaseHelper": "Dino\\Base\\Facades\\BaseHelper",
+                "Setting": "Dino\\Setting\\Facades\\Setting",
+                "DashboardMenu": "Dino\\Base\\Facades\\DashboardMenu",
+                "Theme": "Dino\\Theme\\Facades\\Theme",
+                "ThemeManager": "Dino\\Theme\\Facades\\Manager"
             }
         }
     },
